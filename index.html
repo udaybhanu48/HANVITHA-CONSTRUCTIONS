@@ -2,46 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hanvitha Constructions</title>
-  <link rel="stylesheet" href="styles.css" />
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
     }
 
-    body, html {
-      font-family: Arial, sans-serif;
-      height: 100%;
-      width: 100%;
+    body {
+      line-height: 1.6;
+      background-color: #f9f9f9;
     }
 
     header {
-      background-color: #0b2c40;
-      padding: 15px 40px;
+      background-color: rgba(10, 41, 64, 0.95);
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 10px 20px;
       position: fixed;
-      top: 0;
       width: 100%;
-      z-index: 999;
+      z-index: 10;
     }
 
-    header .logo {
-      height: 60px;
+    .logo {
+      height: 70px; /* Increased by 40% */
+      width: auto;
     }
 
     nav a {
       color: white;
-      margin: 0 15px;
       text-decoration: none;
+      margin-left: 20px;
       font-weight: bold;
     }
 
-    .hero {
+    .hero-background {
       background-image: url("assets/hyderabad1.jpg");
       background-size: cover;
       background-position: center;
@@ -49,18 +48,82 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding-top: 80px; /* leave space for fixed nav */
-    }
-
-    .hero-content {
-      background-color: rgba(0, 0, 0, 0.6);
-      color: white;
-      padding: 40px;
       text-align: center;
-      border-radius: 12px;
+      color: white;
+      padding: 20px;
     }
 
-    .hero-content img {
-      width: 140px; /* 40% larger than original ~100px */
-      margin-bottom: 20px;
+    .hero-background h1 {
+      font-size: 3rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
     }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    footer {
+      background-color: #0a2940;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="assets/logo.png" alt="Hanvitha Logo" class="logo">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section with Background -->
+  <section class="hero-background">
+    <h1>Welcome to Hanvitha Constructions</h1>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are a leading construction firm specializing in residential, commercial, and turnkey projects. With years of experience, we bring your vision to life with quality and precision.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Design & Construction of Residential Projects</li>
+      <li>Design & Construction of Commercial Projects</li>
+      <li>Turnkey Projects</li>
+      <li>Interior Design</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Our Projects</h2>
+    <p>Gallery coming soon with modern Indian construction works!</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Phone: +91-XXXXXXXXXX<br>Email: info@hanvitha.com<br>WhatsApp us for a quote!</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Hanvitha Constructions. All rights reserved.
+  </footer>
+</body>
+</html>
