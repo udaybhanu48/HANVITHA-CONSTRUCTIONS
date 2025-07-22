@@ -4,44 +4,41 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hanvitha Constructions</title>
+  <link rel="stylesheet" href="styles.css" />
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
     }
 
-    body {
-      background-color: #f9f9f9;
+    body, html {
+      font-family: Arial, sans-serif;
+      height: 100%;
+      width: 100%;
     }
 
     header {
-      background-color: rgba(10, 41, 64, 0.95);
+      background-color: #0b2c40;
+      padding: 15px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 12px 40px;
       position: fixed;
+      top: 0;
       width: 100%;
-      z-index: 1000;
+      z-index: 999;
     }
 
-    .logo {
-      height: 70px;
+    header .logo {
+      height: 60px;
     }
 
     nav a {
       color: white;
+      margin: 0 15px;
       text-decoration: none;
-      margin-left: 30px;
       font-weight: bold;
-      font-size: 16px;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #ffc107;
     }
 
     .hero {
@@ -49,24 +46,21 @@
       background-size: cover;
       background-position: center;
       height: 100vh;
-      width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
-      text-align: center;
-      color: white;
-      position: relative;
-    }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
+      padding-top: 80px; /* leave space for fixed nav */
     }
 
     .hero-content {
-      position: relative;
-      z-index: 2;
-      max-width:
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 40px;
+      text-align: center;
+      border-radius: 12px;
+    }
+
+    .hero-content img {
+      width: 140px; /* 40% larger than original ~100px */
+      margin-bottom: 20px;
+    }
