@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hanvitha Constructions</title>
   <style>
     * {
@@ -29,7 +29,7 @@
     }
 
     .logo {
-      height: 70px; /* Increased by 40% */
+      height: 70px;
       width: auto;
     }
 
@@ -40,7 +40,7 @@
       font-weight: bold;
     }
 
-    .hero-background {
+    .hero {
       background-image: url("assets/hyderabad1.jpg");
       background-size: cover;
       background-position: center;
@@ -51,8 +51,93 @@
       text-align: center;
       color: white;
       padding: 20px;
+      position: relative;
     }
 
-    .hero-background h1 {
-      font-size: 3rem;
+    .hero-overlay {
       background-color: rgba(0, 0, 0, 0.5);
+      padding: 40px 20px;
+      border-radius: 15px;
+    }
+
+    .hero img {
+      height: 100px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    footer {
+      background-color: #0a2940;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="assets/logo.png" alt="Hanvitha Logo" class="logo">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section with Logo & Text -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <img src="assets/logo.png" alt="Hanvitha Logo">
+      <h1>HANVITHA CONSTRUCTIONS</h1>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are a leading construction firm specializing in residential, commercial, and turnkey projects. With years of experience, we bring your vision to life with quality and precision.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Design & Construction of Residential Projects</li>
+      <li>Design & Construction of Commercial Projects</li>
+      <li>Turnkey Projects</li>
+      <li>Interior Design</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Our Projects</h2>
+    <p>Gallery coming soon with modern Indian construction works!</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Phone: +91-XXXXXXXXXX<br>Email: info@hanvitha.com<br>WhatsApp us for a quote!</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Hanvitha Constructions. All rights reserved.
+  </footer>
+
+</body>
+</html>
