@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hanvitha Constructions</title>
-  <link rel="stylesheet" href="style.css" />
   <style>
     * {
       margin: 0;
@@ -30,7 +29,7 @@
     }
 
     .hero-overlay {
-      background-color: rgba(0, 0, 0, 0.6); /* dark overlay for readability */
+      background-color: rgba(0, 0, 0, 0.6);
       position: absolute;
       top: 0;
       bottom: 0;
@@ -62,4 +61,28 @@
     .button {
       margin-top: 20px;
       padding: 12px 24px;
-      font-size
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #005baa;
+      color: white;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #004080;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <img src="assets/logo.png" alt="Hanvitha Logo" class="logo" />
+      <h1>HANVITHA CONSTRUCTIONS</h1>
+      <p>Design • Build • Turnkey Solutions</p>
+      <a href="#contact"><button class="button">Get in Touch</button></a>
+    </div>
+  </section>
+</body>
+</html>
