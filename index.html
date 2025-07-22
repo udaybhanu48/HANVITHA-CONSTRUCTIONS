@@ -21,22 +21,27 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px 20px;
+      padding: 12px 40px;
       position: fixed;
       width: 100%;
-      z-index: 10;
+      z-index: 1000;
     }
 
     .logo {
       height: 70px;
-      width: auto;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin-left: 20px;
+      margin-left: 30px;
       font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffc107;
     }
 
     .hero {
@@ -44,6 +49,7 @@
       background-size: cover;
       background-position: center;
       height: 100vh;
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -52,70 +58,15 @@
       position: relative;
     }
 
-    .hero-overlay {
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
       background-color: rgba(0, 0, 0, 0.5);
-      padding: 40px 20px;
-      border-radius: 15px;
     }
 
-    .hero-overlay img {
-      height: 100px;
-      margin-bottom: 20px;
-    }
-
-    .hero-overlay h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-
-    .hero-overlay p {
-      font-size: 1.2rem;
-    }
-
-    section {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    footer {
-      background-color: #0a2940;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Header -->
-  <header>
-    <img src="assets/logo.png" alt="Hanvitha Logo" class="logo">
-    <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-overlay">
-      <img src="assets/logo.png" alt="Hanvitha Logo in Hero">
-      <h1>Hanvitha Constructions</h1>
-      <p>We Design. We Build. We Deliver Excellence.</p>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Us</h2>
-    <p>We are a leading construction firm specializing in residential, commercial, and turnkey projects. With years of experience, we bring your vision to life with quality and precision.</p>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Design & Construction of Reside
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width:
