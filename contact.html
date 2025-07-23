@@ -1,29 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact - Hanvitha Constructions</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
+
   <header>
-    <h1>Hanvitha Constructions</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about/about.html">About</a></li>
+        <li><a href="../services/services.html">Services</a></li>
+        <li><a href="../projects/projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
     </nav>
   </header>
-  <main>
-    <h2>Contact Us</h2>
-    <p>Phone: +91-XXXXXXXXXX</p>
-    <p>Email: info@hanvithaconstructions.com</p>
-  </main>
+
+  <section class="page-header">
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you! Reach out via the form or contact details below.</p>
+  </section>
+
+  <section class="contact-form">
+    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+      <label for="name">Name:</label><br/>
+      <input type="text" id="name" name="name" required /><br/><br/>
+
+      <label for="email">Email:</label><br/>
+      <input type="email" id="email" name="email" required /><br/><br/>
+
+      <label for="message">Message:</label><br/>
+      <textarea id="message" name="message" rows="5" required></textarea><br/><br/>
+
+      <input type="submit" value="Send" />
+    </form>
+
+    <div class="contact-info">
+      <p><strong>Email:</strong> info@hanvithaconstructions.com</p>
+      <p><strong>Phone:</strong> +91-9876543210</p>
+      <p><strong>Location:</strong> Hyderabad, Telangana</p>
+    </div>
+  </section>
+
   <footer>
-    <p>&copy; 2025 Hanvitha Constructions</p>
+    <p>&copy; 2025 Hanvitha Constructions. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
+🧩 Nex
