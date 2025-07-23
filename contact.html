@@ -4,51 +4,102 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact - Hanvitha Constructions</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #1f3b63;
+      padding: 15px 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-section {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-section h2 {
+      color: #1f3b63;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .contact-info {
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+
+    .contact-info p {
+      margin-bottom: 10px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 12px;
+      font-size: 16px;
+      background-color: #005baa;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #004080;
+    }
+
+    footer {
+      background-color: #1f3b63;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
 
+  <!-- Navigation -->
   <header>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="page-header">
-    <h1>Contact Us</h1>
-    <p>We'd love to hear from you! Reach out via the form or contact details below.</p>
-  </section>
-
-  <section class="contact-form">
-    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-      <label for="name">Name:</label><br/>
-      <input type="text" id="name" name="name" required /><br/><br/>
-
-      <label for="email">Email:</label><br/>
-      <input type="email" id="email" name="email" required /><br/><br/>
-
-      <label for="message">Message:</label><br/>
-      <textarea id="message" name="message" rows="5" required></textarea><br/><br/>
-
-      <input type="submit" value="Send" />
-    </form>
-
-    <div class="contact-info">
-      <p><strong>Email:</strong> info@hanvithaconstructions.com</p>
-      <p><strong>Phone:</strong> +91-9876543210</p>
-      <p><strong>Location:</strong> Hyderabad, Telangana</p>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Hanvitha Constructions. All rights reserved.</p>
-  </footer>
-
-</body>
-</html>
+      <a href="../index.html">Home</a>
+      <a href="../about/about.html">About</a>
+      <a href="../services/services.
