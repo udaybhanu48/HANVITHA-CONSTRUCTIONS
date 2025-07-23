@@ -4,43 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hanvitha Constructions</title>
-  <.services {
-  padding: 60px 20px;
-  background-color: #f4f6f8;
-}
-.services h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  color: #1f3b63;
-}
-.service-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-}
-.service-item {
-  width: 260px;
-  background: white;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-.service-item img {
-  height: 60px;
-  margin-bottom: 15px;
-}
-.service-item h3 {
-  font-size: 16px;
-  margin-bottom: 10px;
-  color: #0056b3;
-}
-.service-item p {
-  font-size: 14px;
-  color: #444;
-}
->
+  <style>
     * {
       margin: 0;
       padding: 0;
@@ -50,6 +14,28 @@
     body, html {
       height: 100%;
       font-family: 'Segoe UI', sans-serif;
+    }
+
+    header {
+      background-color: #1f3b63;
+      padding: 10px 20px;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+      justify-content: center;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
     }
 
     .hero {
@@ -80,7 +66,7 @@
     }
 
     .logo {
-      width: 140px; /* 40% larger */
+      width: 140px;
       margin-bottom: 20px;
     }
 
@@ -108,9 +94,66 @@
     .button:hover {
       background-color: #004080;
     }
+
+    .services {
+      padding: 60px 20px;
+      background-color: #f4f6f8;
+    }
+
+    .services h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #1f3b63;
+    }
+
+    .service-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .service-item {
+      width: 260px;
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .service-item img {
+      height: 60px;
+      margin-bottom: 15px;
+    }
+
+    .service-item h3 {
+      font-size: 16px;
+      margin-bottom: 10px;
+      color: #0056b3;
+    }
+
+    .service-item p {
+      font-size: 14px;
+      color: #444;
+    }
   </style>
 </head>
 <body>
+
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
   <section class="hero">
     <div class="hero-overlay"></div>
     <div class="hero-content">
@@ -119,32 +162,36 @@
       <p>Design • Build • Turnkey Solutions</p>
       <a href="#contact"><button class="button">Get in Touch</button></a>
     </div>
-  <<section class="services">
-  <div class="container">
-    <h2>Our Services</h2>
-    <div class="service-list">
-      <div class="service-item">
-        <img src="assets/residential.png" alt="Residential Projects">
-        <h3>Design & Construction of Residential Projects</h3>
-        <p>We build aesthetically pleasing and structurally sound homes, tailored to modern living.</p>
-      </div>
-      <div class="service-item">
-        <img src="assets/commercial.png" alt="Commercial Projects">
-        <h3>Design & Construction of Commercial Projects</h3>
-        <p>From offices to retail spaces, we deliver commercial projects with functionality and style.</p>
-      </div>
-      <div class="service-item">
-        <img src="assets/turnkey.png" alt="Turnkey Projects">
-        <h3>Turnkey Projects</h3>
-        <p>End-to-end project execution — ready for immediate use, with no hassle for the client.</p>
-      </div>
-      <div class="service-item">
-        <img src="assets/interior.png" alt="Interior Design">
-        <h3>Interior Design</h3>
-        <p>We create elegant, functional, and modern interior spaces for homes and businesses.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-list">
+        <div class="service-item">
+          <img src="assets/residential.png" alt="Residential Projects">
+          <h3>Design & Construction of Residential Projects</h3>
+          <p>We build aesthetically pleasing and structurally sound homes, tailored to modern living.</p>
+        </div>
+        <div class="service-item">
+          <img src="assets/commercial.png" alt="Commercial Projects">
+          <h3>Design & Construction of Commercial Projects</h3>
+          <p>From offices to retail spaces, we deliver commercial projects with functionality and style.</p>
+        </div>
+        <div class="service-item">
+          <img src="assets/turnkey.png" alt="Turnkey Projects">
+          <h3>Turnkey Projects</h3>
+          <p>End-to-end project execution — ready for immediate use, with no hassle for the client.</p>
+        </div>
+        <div class="service-item">
+          <img src="assets/interior.png" alt="Interior Design">
+          <h3>Interior Design</h3>
+          <p>We create elegant, functional, and modern interior spaces for homes and businesses.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
 </body>
 </html>
