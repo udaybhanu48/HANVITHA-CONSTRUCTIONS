@@ -4,196 +4,55 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hanvitha Constructions</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body, html { height: 100%; font-family: 'Segoe UI', sans-serif; }
-
-    header {
-      background-color: #1f3b63;
-      padding: 10px 20px;
-    }
-
-    nav ul {
-      display: flex;
-      gap: 20px;
-      list-style: none;
-      justify-content: center;
-    }
-
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav ul li a:hover {
-      text-decoration: underline;
-    }
-
-    .hero {
-      background: url("assets/hyderabad1.jpg") no-repeat center center/cover;
-      height: 100vh;
-      color: white;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-    }
-
-    .hero-overlay {
-      background-color: rgba(0, 0, 0, 0.6);
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: 1;
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 2;
-    }
-
-    .logo {
-      width: 140px;
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      font-size: 3rem;
-      letter-spacing: 2px;
-    }
-
-    p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-    }
-
-    .button {
-      margin-top: 20px;
-      padding: 12px 24px;
-      font-size: 1rem;
-      border: none;
-      border-radius: 5px;
-      background-color: #005baa;
-      color: white;
-      cursor: pointer;
-    }
-
-    .button:hover {
-      background-color: #004080;
-    }
-
-    .services {
-      padding: 60px 20px;
-      background-color: #f4f6f8;
-    }
-
-    .services h2 {
-      text-align: center;
-      margin-bottom: 40px;
-      color: #1f3b63;
-    }
-
-    .service-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      justify-content: center;
-    }
-
-    .service-item {
-      width: 260px;
-      background: white;
-      border-radius: 10px;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-
-    .service-item img {
-      height: 60px;
-      margin-bottom: 15px;
-    }
-
-    .service-item h3 {
-      font-size: 16px;
-      margin-bottom: 10px;
-      color: #0056b3;
-    }
-
-    .service-item p {
-      font-size: 14px;
-      color: #444;
-    }
-
-    footer {
-      background-color: #1f3b63;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- Navigation -->
   <header>
+    <h1>Hanvitha Constructions</h1>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about/about.html">About Us</a></li>
-        <li><a href="services/services.html">Services</a></li>
-        <li><a href="projects/projects.html">Projects</a></li>
-        <li><a href="contact/contact.html">Contact</a></li>
-      </ul>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <img src="assets/logo.png" alt="Hanvitha Logo" class="logo" />
-      <h1>HANVITHA CONSTRUCTIONS</h1>
-      <p>Design • Build • Turnkey Solutions</p>
-      <a href="contact/contact.html"><button class="button">Get in Touch</button></a>
-    </div>
+    <h2>We Design & Build Your Dream Spaces</h2>
+    <p>Residential | Commercial | Turnkey | Interiors</p>
   </section>
 
-  <!-- Services Section -->
-  <section class="services">
-    <h2>Our Services</h2>
-    <div class="service-list">
-      <div class="service-item">
-        <img src="assets/residential.png" alt="Residential Projects">
-        <h3>Residential Projects</h3>
-        <p>We build aesthetically pleasing and structurally sound homes.</p>
+  <section class="about-preview">
+    <h3>About Us</h3>
+    <p>Hanvitha Constructions is a leading design and build firm...</p>
+    <a href="about.html">Know More</a>
+  </section>
+
+  <section class="services-preview">
+    <h3>Our Services</h3>
+    <div class="services">
+      <div>
+        <img src="assets/residential.png" alt="Residential" />
+        <p>Residential Projects</p>
       </div>
-      <div class="service-item">
-        <img src="assets/commercial.png" alt="Commercial Projects">
-        <h3>Commercial Projects</h3>
-        <p>From offices to retail spaces, we deliver functionality and style.</p>
+      <div>
+        <img src="assets/commercial.png" alt="Commercial" />
+        <p>Commercial Projects</p>
       </div>
-      <div class="service-item">
-        <img src="assets/turnkey.png" alt="Turnkey Projects">
-        <h3>Turnkey Projects</h3>
-        <p>End-to-end execution — ready for immediate use.</p>
+      <div>
+        <img src="assets/turnkey.png" alt="Turnkey" />
+        <p>Turnkey Projects</p>
       </div>
-      <div class="service-item">
-        <img src="assets/interior.png" alt="Interior Design">
-        <h3>Interior Design</h3>
-        <p>We design modern, elegant spaces for homes and offices.</p>
+      <div>
+        <img src="assets/interior.png" alt="Interior" />
+        <p>Interior Design</p>
       </div>
     </div>
   </section>
 
   <footer>
-    © 2025 Hanvitha Constructions. All Rights Reserved.
+    <p>&copy; 2025 Hanvitha Constructions</p>
   </footer>
-
 </body>
 </html>
