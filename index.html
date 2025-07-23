@@ -4,175 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hanvitha Constructions</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-
-    header {
-      background-color: #1f3b63;
-      padding: 15px 20px;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 16px;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .hero {
-      background: url("assets/hyderabad1.jpg") no-repeat center center/cover;
-      height: 100vh;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0;
-      right: 0; bottom: 0;
-      background: rgba(0, 0, 0, 0.6);
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 1;
-      color: white;
-    }
-
-    .hero-content img {
-      width: 140px;
-      margin-bottom: 20px;
-    }
-
-    .hero-content h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-
-    .hero-content p {
-      font-size: 1.2rem;
-    }
-
-    .button {
-      margin-top: 20px;
-      padding: 12px 24px;
-      font-size: 1rem;
-      border: none;
-      border-radius: 5px;
-      background-color: #005baa;
-      color: white;
-      cursor: pointer;
-    }
-
-    .button:hover {
-      background-color: #004080;
-    }
-
-    .section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    .section h2 {
-      margin-bottom: 30px;
-      font-size: 2rem;
-      color: #1f3b63;
-    }
-
-    .services {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      justify-content: center;
-    }
-
-    .service-card {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      width: 250px;
-      padding: 20px;
-    }
-
-    .service-card img {
-      height: 60px;
-      margin-bottom: 15px;
-    }
-
-    .service-card h3 {
-      font-size: 1.1rem;
-      color: #0056b3;
-      margin-bottom: 10px;
-    }
-
-    .service-card p {
-      font-size: 14px;
-      color: #555;
-    }
-
-    footer {
-      background-color: #1f3b63;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-
-    a.button-link {
-      display: inline-block;
-      margin-top: 20px;
-      text-decoration: none;
-      background: #005baa;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
-    }
-
-    a.button-link:hover {
-      background: #003f7d;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- Header Navigation -->
   <header>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="/about.html">About</a>
-      <a href="/services.html">Services</a>
-      <a href="/projects.html">Projects</a>
-      <a href="/contact.html">Contact</a>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about/about.html">About</a></li>
+        <li><a href="services/services.html">Services</a></li>
+        <li><a href="projects/projects.html">Projects</a></li>
+        <li><a href="contact/contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
-      <img src="assets/logo.png" alt="Hanvitha Logo">
+      <img src="assets/logo.png" alt="Hanvitha Logo" />
       <h1>HANVITHA CONSTRUCTIONS</h1>
       <p>Design • Build • Turnkey Solutions</p>
-      <a href="contact/contact.html"><button class="button">Get in Touch</button></a>
+      <a href="contact/contact.html" class="button">Get in Touch</a>
     </div>
   </section>
 
@@ -181,24 +36,24 @@
     <h2>Our Services</h2>
     <div class="services">
       <div class="service-card">
-        <img src="assets/residential.png" alt="Residential">
+        <img src="assets/residential.png" alt="Residential" />
         <h3>Residential Construction</h3>
-        <p>Beautifully designed, structurally strong homes tailored to your lifestyle.</p>
+        <p>Homes designed and built for quality living.</p>
       </div>
       <div class="service-card">
-        <img src="assets/commercial.png" alt="Commercial">
-        <h3>Commercial Construction</h3>
-        <p>Smart office, retail, and workspace solutions built to impress and perform.</p>
+        <img src="assets/commercial.png" alt="Commercial" />
+        <h3>Commercial Projects</h3>
+        <p>Smart offices and retail spaces crafted with precision.</p>
       </div>
       <div class="service-card">
-        <img src="assets/turnkey.png" alt="Turnkey">
-        <h3>Turnkey Projects</h3>
-        <p>From planning to keys-in-hand — complete hassle-free execution.</p>
+        <img src="assets/turnkey.png" alt="Turnkey" />
+        <h3>Turnkey Solutions</h3>
+        <p>From concept to completion, we handle it all.</p>
       </div>
       <div class="service-card">
-        <img src="assets/interior.png" alt="Interior">
+        <img src="assets/interior.png" alt="Interior" />
         <h3>Interior Design</h3>
-        <p>Elegant interiors that reflect your taste and maximize functionality.</p>
+        <p>Stunning interiors tailored to your space.</p>
       </div>
     </div>
     <a class="button-link" href="services/services.html">Explore All Services</a>
@@ -206,7 +61,7 @@
 
   <!-- Footer -->
   <footer>
-    © 2025 Hanvitha Constructions | All Rights Reserved
+    <p>&copy; 2025 Hanvitha Constructions. All rights reserved.</p>
   </footer>
 
 </body>
