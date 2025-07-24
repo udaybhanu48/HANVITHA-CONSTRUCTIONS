@@ -1,71 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Services - Hanvitha Constructions</title>
-  <link rel="stylesheet" href="../style.css" />
-  <link rel="icon" href="../assets/logo.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Hanvitha Constructions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px;
+            background-color: #fff;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .service-box {
+            width: 250px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            background-color: #f0f0f0;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .service-box:hover {
+            transform: scale(1.05);
+        }
+
+        .service-box img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+
+        .service-box h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .service-box p {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="container header">
-      <img src="../assets/logo.png" alt="Hanvitha Constructions Logo" class="logo">
-      <nav>
-        <ul class="nav-links">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../about/about.html">About</a></li>
-          <li><a href="../services/services.html" class="active">Services</a></li>
-          <li><a href="../projects/projects.html">Projects</a></li>
-          <li><a href="../contact/contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <a href="../contact/contact.html" class="quote-button">Get a Quote</a>
-    </div>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero services-hero">
-    <div class="container">
-      <h1>Our Services</h1>
-      <p>We offer complete construction solutions with a focus on quality, design, and timely delivery.</p>
-    </div>
-  </section>
+    <div class="services-container">
+        <!-- Residential Projects -->
+        <div class="service-box">
+            <img src="../assets/residential.png" alt="Residential Design & Construction">
+            <h3>Residential Projects</h3>
+            <p>Design and construction of villas, apartments, and individual homes tailored to your needs.</p>
+        </div>
 
-  <!-- Services Section -->
-  <section class="services container">
-    <div class="service-box">
-      <img src="../assets/residential.png" alt="Residential Design & Construction" />
-      <h2>Residential Projects</h2>
-      <p>Design and construction of villas, apartments, and individual homes tailored to your needs.</p>
-    </div>
-    <div class="service-box">
-      <img src="../assets/commercial.png" alt="Commercial Design & Construction" />
-      <h2>Commercial Projects</h2>
-      <p>From office spaces to retail complexes, we deliver efficient and aesthetic commercial buildings.</p>
-    </div>
-    <div class="service-box">
-      <img src="../assets/turnkey.png" alt="Turnkey Projects" />
-      <h2>Turnkey Projects</h2>
-      <p>End-to-end project management from design to final handover, ensuring peace of mind.</p>
-    </div>
-    <div class="service-box">
-      <img src="../assets/interior.png" alt="Interior Design" />
-      <h2>Interior Design</h2>
-      <p>Creative and functional interior solutions that reflect your taste and optimize space usage.</p>
-    </div>
-  </section>
+        <!-- Commercial Projects -->
+        <div class="service-box">
+            <img src="../assets/commercial.png" alt="Commercial Design & Construction">
+            <h3>Commercial Projects</h3>
+            <p>From office spaces to retail complexes, we deliver efficient and aesthetic commercial buildings.</p>
+        </div>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Hanvitha Constructions. All rights reserved.</p>
-      <div class="footer-contact">
-        <p>📞 +91 98765 43210 | 📧 hanvitha@example.com</p>
-        <p>📍 Hyderabad, Telangana</p>
-      </div>
+        <!-- Turnkey Projects -->
+        <div class="service-box">
+            <img src="../assets/turnkey.png" alt="Turnkey Projects">
+            <h3>Turnkey Projects</h3>
+            <p>End-to-end project management from design to final handover, ensuring peace of mind.</p>
+        </div>
+
+        <!-- Interior Design -->
+        <div class="service-box">
+            <img src="../assets/interior.png" alt="Interior Design">
+            <h3>Interior Design</h3>
+            <p>Creative and functional interior solutions that reflect your taste and optimize space usage.</p>
+        </div>
     </div>
-  </footer>
+
 </body>
 </html>
