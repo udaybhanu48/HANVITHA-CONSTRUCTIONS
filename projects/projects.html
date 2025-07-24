@@ -4,48 +4,146 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Our Projects - Hanvitha Constructions</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('../assets/images/projects-bg.jpg') center/cover no-repeat;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 32px;
+      color: #003366;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .project-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: scale(1.02);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-card .info {
+      padding: 15px;
+    }
+
+    .project-card h3 {
+      margin: 0;
+      font-size: 20px;
+      color: #003366;
+    }
+
+    .footer {
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Navigation -->
   <header>
+    <h1>Hanvitha Constructions</h1>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html" class="active">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <a href="../index.html">Home</a>
+      <a href="../about/about.html">About</a>
+      <a href="../services/services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="../contact/contact.html">Contact</a>
     </nav>
   </header>
 
-  <!-- Projects Section -->
-  <section class="page-header">
-    <h1>Our Projects</h1>
-    <p>Take a look at some of the work we've delivered successfully.</p>
+  <section class="hero">
+    <h2>Our Projects</h2>
+    <p>Explore our portfolio of completed and ongoing works</p>
   </section>
 
-  <section class="projects-gallery">
-    <div class="project-item">
-      <img src="assets/project1.jpg" alt="Residential Project" />
-      <h3>Modern Villa - Jubilee Hills</h3>
+  <h2 class="section-title">Featured Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <img src="../assets/images/project1.jpg" alt="Project 1">
+      <div class="info">
+        <h3>Modern Villa - Hyderabad</h3>
+        <p>Luxury 4BHK residential villa with modern interiors and landscaped gardens.</p>
+      </div>
     </div>
-    <div class="project-item">
-      <img src="assets/project2.jpg" alt="Commercial Project" />
-      <h3>Office Tower - Madhapur</h3>
+    <div class="project-card">
+      <img src="../assets/images/project2.jpg" alt="Project 2">
+      <div class="info">
+        <h3>Commercial Complex - Gachibowli</h3>
+        <p>Multi-storey office complex with energy-efficient design and ample parking.</p>
+      </div>
     </div>
-    <div class="project-item">
-      <img src="assets/project3.jpg" alt="Turnkey Interior" />
-      <h3>Turnkey Apartment Interiors - Gachibowli</h3>
+    <div class="project-card">
+      <img src="../assets/images/project3.jpg" alt="Project 3">
+      <div class="info">
+        <h3>Turnkey Apartment - Madhapur</h3>
+        <p>Complete design & build of 2BHK apartment units with full interior fit-out.</p>
+      </div>
     </div>
-  </section>
+    <div class="project-card">
+      <img src="../assets/images/project4.jpg" alt="Project 4">
+      <div class="info">
+        <h3>Interior Design - Banjara Hills</h3>
+        <p>Elegant living room and modular kitchen makeover with space optimization.</p>
+      </div>
+    </div>
+  </div>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Hanvitha Constructions. All rights reserved.</p>
-  </footer>
+  <div class="footer">
+    &copy; 2025 Hanvitha Constructions. All Rights Reserved.
+  </div>
 
 </body>
 </html>
