@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hanvitha Constructions</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -15,45 +19,39 @@
 
     header {
       background-color: #1f3b63;
-      padding: 15px 20px;
-    }
-
-    .header-container {
+      padding: 15px 30px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
+    .logo {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
     nav {
       display: flex;
-      gap: 30px;
+      gap: 25px;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 500;
       font-size: 16px;
     }
 
     nav a:hover {
       text-decoration: underline;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-    }
-
-    .brand img {
-      height: 50px;
-      margin-right: 10px;
-    }
-
-    .brand span {
-      font-size: 20px;
-      font-weight: bold;
-      color: white;
     }
 
     .hero {
@@ -178,19 +176,17 @@
 
   <!-- Header -->
   <header>
-    <div class="header-container">
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about/about.html">About</a>
-        <a href="services/services.html">Services</a>
-        <a href="projects/projects.html">Projects</a>
-        <a href="contact/contact.html">Contact</a>
-      </nav>
-      <div class="brand">
-        <img src="assets/logo.png" alt="Hanvitha Logo">
-        <span>Hanvitha Constructions</span>
-      </div>
+    <div class="logo">
+      <img src="assets/logo.png" alt="Logo">
+      Hanvitha Constructions
     </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about/about.html">About</a>
+      <a href="services/services.html">Services</a>
+      <a href="projects/projects.html">Projects</a>
+      <a href="contact/contact.html">Contact</a>
+    </nav>
   </header>
 
   <!-- Hero Section -->
