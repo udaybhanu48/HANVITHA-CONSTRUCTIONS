@@ -18,9 +18,14 @@
       padding: 15px 20px;
     }
 
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
     nav {
       display: flex;
-      justify-content: center;
       gap: 30px;
     }
 
@@ -33,6 +38,22 @@
 
     nav a:hover {
       text-decoration: underline;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+    }
+
+    .brand img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .brand span {
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
     }
 
     .hero {
@@ -155,15 +176,21 @@
 </head>
 <body>
 
-  <!-- Navigation -->
+  <!-- Header -->
   <header>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about/about.html">About</a>
-      <a href="services/services.html">Services</a>
-      <a href="projects/projects.html">Projects</a>
-      <a href="contact/contact.html">Contact</a>
-    </nav>
+    <div class="header-container">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about/about.html">About</a>
+        <a href="services/services.html">Services</a>
+        <a href="projects/projects.html">Projects</a>
+        <a href="contact/contact.html">Contact</a>
+      </nav>
+      <div class="brand">
+        <img src="assets/logo.png" alt="Hanvitha Logo">
+        <span>Hanvitha Constructions</span>
+      </div>
+    </div>
   </header>
 
   <!-- Hero Section -->
