@@ -5,6 +5,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Us - Hanvitha Constructions</title>
   <link rel="stylesheet" href="../style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    nav {
+      display: flex;
+      gap: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 6px 10px;
+    }
+
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 4px;
+    }
+
+    .about-section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .about-section h2 {
+      text-align: center;
+      font-size: 2.2em;
+      margin-bottom: 30px;
+      color: #003366;
+    }
+
+    .about-flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: flex-start;
+    }
+
+    .about-flex img {
+      max-width: 250px;
+      border-radius: 10px;
+    }
+
+    .about-flex div {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .about-flex h3 {
+      margin-top: 0;
+      color: #003366;
+    }
+
+    footer {
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
 
@@ -12,18 +93,18 @@
     <h1>Hanvitha Constructions</h1>
     <nav>
       <a href="../index.html">Home</a>
-      <a href="../about/about.html">About</a>
+      <a href="about.html">About</a>
       <a href="../services/services.html">Services</a>
       <a href="../projects/projects.html">Projects</a>
       <a href="../contact/contact.html">Contact</a>
     </nav>
   </header>
 
-  <section class="about-section" style="padding: 40px; max-width: 900px; margin: auto;">
-    <h2 style="text-align: center; font-size: 2em; margin-bottom: 20px;">About Us</h2>
-    <div style="display: flex; flex-wrap: wrap; gap: 30px; align-items: flex-start;">
-      <img src="../assets/uday-bhanu.png" alt="Uday Bhanu Yerramsetty" style="max-width: 250px; border-radius: 10px;" />
-      <div style="flex: 1;">
+  <section class="about-section">
+    <h2>About Us</h2>
+    <div class="about-flex">
+      <img src="../assets/uday-bhanu.png" alt="Uday Bhanu Yerramsetty" />
+      <div>
         <h3>Uday Bhanu Yerramsetty</h3>
         <p><strong>B.E. Civil Engineering (Project Management)</strong></p>
 
