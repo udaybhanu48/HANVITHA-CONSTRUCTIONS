@@ -12,36 +12,37 @@
       padding: 0;
     }
 
+    /* Header styling */
     header {
       background-color: #003366;
-      color: white;
-      padding: 20px;
-      text-align: center;
+      padding: 15px 30px;
     }
 
-    header h1 {
-      margin: 0;
-    }
-
-    nav {
-      background-color: #005599;
+    .navbar {
       display: flex;
-      justify-content: center;
-      padding: 10px;
+      justify-content: space-between;
+      align-items: center;
       flex-wrap: wrap;
     }
 
-    nav a {
+    .logo {
       color: white;
-      text-decoration: none;
-      margin: 0 15px;
+      font-size: 24px;
       font-weight: bold;
     }
 
-    nav a:hover {
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
       text-decoration: underline;
     }
 
+    /* Services section */
     .services-container {
       display: flex;
       flex-wrap: wrap;
@@ -83,6 +84,7 @@
       color: #555;
     }
 
+    /* Footer */
     footer {
       background-color: #003366;
       color: white;
@@ -94,18 +96,21 @@
 </head>
 <body>
 
+  <!-- Header with logo and navigation -->
   <header>
-    <h1>Hanvitha Constructions</h1>
+    <div class="navbar">
+      <div class="logo">Hanvitha Constructions</div>
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../about/about.html">About</a>
+        <a href="../services/services.html">Services</a>
+        <a href="../projects/projects.html">Projects</a>
+        <a href="../contact/contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <nav>
-    <a href="../index.html">Home</a>
-    <a href="../about/about.html">About</a>
-    <a href="../services/services.html">Services</a>
-    <a href="../projects/projects.html">Projects</a>
-    <a href="../contact/contact.html">Contact</a>
-  </nav>
-
+  <!-- Services Section -->
   <div class="services-container">
     <!-- Residential Projects -->
     <div class="service-box">
@@ -136,10 +141,10 @@
     </div>
   </div>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Hanvitha Constructions. All rights reserved.</p>
   </footer>
 
 </body>
 </html>
-
